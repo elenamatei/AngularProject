@@ -1,0 +1,69 @@
+.profile{
+  position:fixed;
+  top:0;
+  right:0;
+  height:100vh;
+  background-color: #193E6B;
+  z-index:9;
+  transition-duration: .5s;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active{
+  width: 100vw;
+}
+.idle{
+  width: 0;
+}
+
+.profile-content{
+  width: 100%;
+  max-width: 500px;
+  padding: 2em;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+input,textarea{
+  width: 100%;
+  padding:1em;
+  border-radius: 1em;
+  margin-bottom: .5em;
+  resize: none;
+  outline: none;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+}
+
+.directions {
+  position: relative;
+  max-width: 30em;
+  background-color: #fff;
+  padding: 1.125em 1.5em;
+  font-size: 1.25em;
+  margin-bottom: 1em;
+  border-radius: 1rem;
+  box-shadow:	0 0.125rem 0.5rem rgba(0, 0, 0, .3), 0 0.0625rem 0.125rem rgba(0, 0, 0, .2);
+}
+
+.directions::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 100%;
+  left: 1.5em;
+  border: .75rem solid transparent;
+  border-top: none;
+
+
+border-bottom-color: #fff;
+  filter: drop-shadow(0 -0.0625rem 0.0625rem rgba(0, 0, 0, .1));
+}
+

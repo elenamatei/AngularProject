@@ -1,0 +1,74 @@
+.wallpaper{
+  background-image: url("src/assets/color-g0fe1444c6_1280.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+img{
+  position: fixed;
+  display: block;
+  top: 20vh;
+  left: 10vw;
+  width: 32vw;
+  height: 30vw;
+}
+.register-form{
+  position: fixed;
+  display: block;
+  top:15vh;
+  right: 20vw;
+  padding: 40px;
+  height: 40em;
+  width: 30em;
+  border-radius: 25px;
+  background-color: #8A84D1;
+  align-content: center;
+  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.2);
+
+}
+.field{
+  box-shadow: darkslategrey 0px 50px 100px -20px, darkslategrey 0px 30px 60px -30px, darkslategrey 0px -2px 6px 0px inset;
+  margin: 5px;
+  border-radius: 1em;
+  resize: none;
+  outline: none;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+}
+
+h1{
+  text-align: center;
+  margin-top: 40px;
+  font-size: x-large;
+  font-weight: bold;
+}
+label{
+  font-size: medium;
+}
+button{
+  margin:5px;
+}
+.redirect-login{
+  text-align: center;
+  font-size: medium;
+}
+a{
+  color: green;
+}
+.date-picker{
+  box-shadow: darkslategrey 0px 50px 100px -20px, darkslategrey 0px 30px 60px -30px, darkslategrey 0px -2px 6px 0px inset;
+  background-color:rgba(240, 195, 255,0.80);
+  margin: 5px;
+  border-radius: 1em;
+  resize: none;
+  outline: none;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+
+}
+

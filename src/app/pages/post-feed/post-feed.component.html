@@ -1,0 +1,8 @@
+<div class="feed-page">
+<div id="post-feed">
+  <!-- reusable component "post" -->
+  <app-post *ngFor="let post of posts" [postData]="post"></app-post>
+</div>
+<button  (click)="onCreatePostClick()" mat-fab color="warn" id="post-button"><mat-icon>add</mat-icon></button>
+  <a [routerLink]="['/profilePage']"><button mat-fab id="profile-button"><mat-icon>account_circle</mat-icon></button></a>
+</div>

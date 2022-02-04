@@ -1,0 +1,37 @@
+<div class="wallpaper">
+<div class="container-fluid ">
+  <div class="row">
+    <div class="left-side">
+      <img src="../../../assets/socialMediaLogo.png">
+    </div>
+    <div class="login-form">
+      <h1>Login</h1>
+      <div class="form-group">
+        <label >Email</label>
+        <input #loginEmail
+          class="form-control field" placeholder="Email ..."  [(ngModel)]="user.email" (keydown.enter)="isNotValid()?null:onLogin(loginEmail,loginPassword)"/>
+      </div>
+      <div class="form-group">
+        <label >Password</label>
+        <input #loginPassword class="form-control field" placeholder="Password ..." type="password"  [(ngModel)]="user.password" (keydown.enter)="isNotValid()?null:onLogin(loginEmail,loginPassword)"/>
+      </div>
+      <div *ngIf="isForgotPasswordState()">
+
+        <input #resetEmail placeholder="Email">
+        <button (click)="onResetClick(resetEmail)" type="button" class="btn btn-success">Reset</button>
+
+      </div>
+      <button [disabled]="isNotValid()" (click)="onLogin(loginEmail,loginPassword)"  class="btn btn-success">Login</button>
+      <button (click)="onForgotPasswordClick()" type="button" class="btn btn-warning">Forgot password?</button>
+      <div class="redirect-register">
+        You don't have an account?
+        <a [routerLink]="['/register']">Register</a>
+      </div>
+      <div class="alert alert-danger" *ngIf="error">{{error}}</div>
+    </div>
+
+  </div>
+
+
+</div>
+</div>

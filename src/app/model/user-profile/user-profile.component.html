@@ -1,0 +1,11 @@
+<div class="profile" [ngClass]="{'active': show, 'idle': !show}" >
+  <div class="profile-content">
+
+    <div class="directions bubble"><mat-icon>group</mat-icon>To complete your profile creation,tell us something about you and let your new friends know what do you like! </div>
+    <input #nameInput placeholder="Name">
+    <textarea #descriptionInput placeholder="Description"></textarea>
+    <button (click)="onContinueClick(nameInput,descriptionInput)" type="button" class="btn btn-success">Continue</button>
+
+  </div>
+
+</div>

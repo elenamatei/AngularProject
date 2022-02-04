@@ -1,0 +1,29 @@
+#post-button {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  background-color: #193E6B;
+  color: white;
+}
+#profile-button{
+  position: fixed;
+  bottom: 2em;
+  left: 2em;
+  background-color: #193E6B;
+  color: white;
+}
+#post-feed{
+  max-width: 500px;
+  margin-top: 5em;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.feed-page{
+  background-image: url("src/assets/color-ge4aeb5992_1280.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+

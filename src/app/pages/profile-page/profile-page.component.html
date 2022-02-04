@@ -1,0 +1,22 @@
+
+<div class="profile-page">
+  <div class="profile-page-land">
+
+    <div class="land-center">
+      <div class="card">
+        <div class="card-cover"></div>
+        <img class="avatar" src="../../../assets/person.png">
+        <div class="user">{{personName}}</div>
+        <div class="content">
+        <label id="name">Your Name</label>
+     <div class="name-bubble">{{personName}}</div>
+        <label id="about">About you</label>
+        <div class="description-bubble">{{personDescription}}</div>
+        </div>
+      </div>
+
+    </div>
+
+    <a [routerLink]="['/postFeed']"><button mat-fab id="go-to-feed"><mat-icon>dashboard</mat-icon></button></a>
+  </div>
+</div>
